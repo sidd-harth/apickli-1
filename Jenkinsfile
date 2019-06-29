@@ -13,6 +13,8 @@ pipeline {
         }
 stage ('pwd2') {
             steps {
+              bat "npm install"
+      
                bat "cd source && gulp test"
             }
         }
